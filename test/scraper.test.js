@@ -16,7 +16,7 @@ describe("Read info from craigslist html", () => {
 
   it("contains a first post called 'Tree Service'", async () => {
     const listings = await scraper.getListings(html);
-    console.log(listings)
+    // console.log(listings)
     expect(listings[0].title).toBe("Tree Service");
   });
 
